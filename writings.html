@@ -1,211 +1,87 @@
+<!DOCTYPE html>
 <html>
-
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JW6QLP5H73"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-      gtag('config', 'G-JW6QLP5H73');
+        gtag('config', 'G-JW6QLP5H73');
     </script>
 
+    <title>Ronald Ang</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        .mainbox {
-            padding: 23px 0;
-            margin-bottom: 24px;
-            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            border: 1px solid rgba(0, 0, 0, 0.1);
-            background-color: rgba(255, 255, 255, 1);
-        }
-
-        .col-centered {
-            float: none;
-            margin: 0 auto;
-        }
-
-        .profile_img {
-            padding-right: 20px;
-            flex-direction: row;
-            display: flex;
-        }
-
-        .u {
-            flex-grow: 1;
-        }
-
-        .dm {
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-        .dn {
-            justify-content: flex-start;
-            flex-direction: row;
-            display: flex;
-        }
-
-        .dr {
-            margin-left: 20px;
-            flex-direction: column;
-            justify-content: center;
-            display: flex;
-        }
-
-        .dp {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: block;
-        }
-
-
-        /* img, svg {
-    vertical-align: middle;
-  } */
-
-        .bx {
-            fill: rgba(0, 0, 0, 0.84);
-            color: rgba(0, 0, 0, 0.84);
-            display: block;
-            letter-spacing: 0px;
-            font-size: 15.8px;
-            line-height: 20px;
-            font-style: normal;
-            font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
-            font-weight: 600;
-        }
-
-        .af {
-            fill: rgba(0, 0, 0, 0.54);
-            color: rgba(0, 0, 0, 0.54);
-            display: block;
-            letter-spacing: 0px;
-            font-size: 15.8px;
-            line-height: 20px;
-            font-style: normal;
-            font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
-            font-weight: 400;
-        }
-
-        .dsbox {
-            margin-top: 38px;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-        .dubox {
-            margin: auto;
-            max-width: 700px;
-            position: relative;
-        }
-
-        .dvbox {
-            /* padding-bottom: 30%; */
-        }
-
-        .bhbox {
-            height: auto;
-            left: 0;
-            top: 0;
-            /* position: absolute; */
-            width: 100%;
-        }
-
-        .eafont {
-            margin-bottom: -0.28em;
-            margin-top: 0.86em;
-            letter-spacing: -0.022em;
-            line-height: 1.12;
-            font-size: 23px;
-            /* padding-left: 20px;
-    padding-right: 20px; */
-            font-weight: 600;
-            color: rgba(0, 0, 0, 0.84);
-            font-style: normal;
-            font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
-        }
-
-        .blog-cont {
-            /* padding-top: 20px; */
-        }
-
-        .blog-cont p {
-            color: #67666a;
-            line-height: 22px;
-        }
-
-        .dsbox a:visited {
-            /* color:red; */
-            border-bottom-color: white !important;
-        }
-
-        a:visited {
-            /* color:red; */
-            /* border-bottom-color:white !important;  */
-        }
-
-        .dsbox a:hover {
-            color: #056797;
-            border-bottom-color: white !important;
-            text-decoration: none;
-        }
-
-        img {
-            vertical-align: bottom;
-            max-width: 100%;
-            height: auto;
-            border: 0;
-            -ms-interpolation-mode: bicubic;
-        }
-
-        .pt-page-current *,
-        .no-js .pt-page * {
-            height: auto;
+        body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+        .w3-row-padding img {margin-bottom: 10px}
+        .bgimg {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url('images/cover_photo.jpg');
+            min-height: 100%;
         }
     </style>
 </head>
+<body>
+
+    <!-- Sidebar with image -->
+    <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+        <div class="bgimg"></div>
+    </nav>
+
+    <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+    <nav class="w3-sidebar w3-black w3-animate-right w3-xlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+        <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+            <i class="fa fa-remove"></i>
+        </a>
+        <div class="w3-bar-block w3-center">
+            <a href="index.html" class="w3-bar-item w3-button w3-text-white w3-hover-white" onclick="closeNav()">Home</a>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="w3-main w3-padding-large" style="margin-left:40%">
+
+        <!-- Menu icon to open sidebar -->
+        <span class="w3-button w3-top w3-white w3-large w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+        <!-- Header -->
+        <header class="w3-container w3-center" style="padding:50px 16px 5px" id="writugs">
+            <p><h4 class = "w3-xlarge">My Writings<h4></p>
+
+            </header>
 
 
-  <!-- Sidebar with image -->
-  <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
-    <div class="bgimg"></div>
-  </nav>
+            <div class="container" style="margin-top:0%"></div>
 
-  <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
-  <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
-    <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
-      <i class="fa fa-remove"></i>
-    </a>
-    <div class="w3-bar-block w3-center">
-      <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About Me</a>
-      <a href="#interests" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">My Working Interests</a>
-      <a href="#bookreviews" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Book Reviews</a>
-      <a href="writings.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">My Writings</a>
-      <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
-    </div>
-  </nav>
+            <div id="jsonContent"></div>
+
+            <script src ="medium.js"></script>
 
 
-<body class="bg-light">
-    <div class="container">
-            <h2>My Writings</h2>
-    </div>
+        </div>
 
-    <div id="jsonContent"></div>
+        <script>
+// Open and close sidebar
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "60%";
+                document.getElementById("mySidebar").style.display = "block";
+            }
 
+            function closeNav() {
+                document.getElementById("mySidebar").style.display = "none";
+            }
+        </script>
 
-    <script src ="medium.js"></script>
-
-
-</body>
-
-</html>
+        </html>
