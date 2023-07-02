@@ -159,7 +159,12 @@
   <h2>Subscribe</h2>
     <hr class="w3-opacity">
     I will send you an email once a month with my favourite book review. It will be no longer than 3 minute read. 
-    <form class = "w3-container" name="contact" method="POST" data-netlify="true">
+    <form class = "w3-container" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" data-netlify-recaptcha="true">
+    <p hidden>
+      <label>
+        Don’t fill this out if you’re human: <input name="bot-field" />
+      </label>
+    </p>
       <p>
         <label for="name">Name </label>
         <input class = "w3-input" type="text" id="name" name="name" />
@@ -168,6 +173,7 @@
         <label for="email">Email</label>
         <input class = "w3-input" type="text" id="email" name="email" />
       </p>
+      <div data-netlify-recaptcha="true"></div>
       <p>
         <button type="submit">Subscribe</button>
       </p>
